@@ -10,7 +10,7 @@
 <a href="https://github.com/FahriAdison/Sad-Bot-V2/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/findme-19/antibot_md?label=PullRequest&color=red&style=flat-square"></a>
 
 ## _「 ENGLISH 」_
-> You can also recode this bot, it's easy for newbie in code/whatsapp bot, `If you have problem chat me` in [this](http://wa.me/6283820073017) `NOTE!` if you chat to me impolitely, then I won't answer it, get used to greeting first :)
+> You can also recode this bot, it's easy for newbie in code/whatsapp bot, `If you have problem chat me` in [this](http://wa.me/6282287219167) `NOTE!` if you chat to me impolitely, then I won't answer it, get used to greeting first :)
 
 ## _「 INDONESIA 」_
 > Kamu juga bisa membuat ulang bot ini, ini sangat mudah untuk pemula dalam programing/bot whatsapp `Jika kamu punya masalah chat sy` ke [ini](http://wa.me/6282287219167) `CATATAN!` jika kamu chat ke saya dengan tidak sopan 'p, woi', maka saya tidak akan menjawabnya, biasakan sapa/salam terlebih dahulu :)
