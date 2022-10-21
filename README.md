@@ -208,6 +208,8 @@ conn.sendHydrated(m.chat, 'text', 'footer', 'buffer', null, null, null, null, [
 
 ---------
 
+<p align="center"><img src="https://profile-counter.glitch.me/{FahriAdison}/count.svg" alt="neoxr :: Visitor's Count" /></p>
+
 ### Thanks To 
 **Allah SWT**
 ### Recode By
