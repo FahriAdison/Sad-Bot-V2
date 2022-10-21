@@ -1,29 +1,28 @@
-var fetch = require ('node-fetch')
 var { youtubeSearch } = require ('@bochilteam/scraper')
-
-var handler = async (m, { conn, text, usedPrefix }) => {
-  if (!text) throw 'Input Query'
+var handler = async (m, { conn, command, text, usedPrefix }) => {
+  if (!text) throw `Use example ${usedPrefix}${command} Minecraft`
   var vid = (await youtubeSearch(text)).video[0]
-  if (!vid) throw 'Video/Audio Tidak Ditemukan'
-  var { title, description, thumbnail, videoId, durationH, durationS, viewH, publishedTime } = vid
+  if (!vid) throw 'Video/Audio Tidak ditemukan'
+  var { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
   var url = 'https://www.youtube.com/watch?v=' + videoId
-  var ytLink = `https://yt-downloader.akkun3704.repl.co/?url=${url}&filter=audioonly&quality=highestaudio&contenttype=audio/mpeg`
-  var capt = `*Title:* ${title}\n*Published:* ${publishedTime}\n*Duration:* ${durationH}\n*Views:* ${viewH}\n*Url:* ${url}`
-  // var buttons = [{ buttonText: { displayText: 'Video' }, buttonId: `${usedPrefix}ytv ${url}` }]
-  var msg = await conn.sendButton(m.chat, capt, '_Audio on progress..._', thumbnail, ['Video',  `${usedPrefix}ytv ${url}`], m) 
- // if (durationS > 4000) return conn.sendMessage(m.chat, { text: `*Download:* ${await shortUrl(ytLink)}\n\n_Duration too long..._` }, { quoted: msg })
-  conn.sendMessage(m.chat, { audio: { url: ytLink }, mimetype: 'audio/mpeg' }, { quoted: msg })
+  await conn.sendHydrated(m.chat, `
+📌 *Title:* ${title}
+🔗 *Url:* ${url}
+🖹 *Description:* ${description}
+⏲️ *Published:* ${publishedTime}
+⌚ *Duration:* ${durationH}
+👁️ *Views:* ${viewH}
+  `.trim(), author, thumbnail + '.png', url, '📺Go To Youtube!', null, null, [
+    ['Audio 🎧', `${usedPrefix}getaud ${url} yes`],
+    ['Video 🎥', `${usedPrefix}ytv ${url} yes`],
+    ['Youtube Search🔎', `${usedPrefix}yts ${url}`]
+  ], m, { viewOnce: true })
 }
-handler.help = handler.alias = ['play']
+handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^(play)$/i
+handler.command = /^play?$/i
+
 handler.exp = 0
+handler.limit = false
 
 module.exports = handler
-
-async function shortUrl(url) {
-  url = encodeURIComponent(url)
-  var res = await fetch(`https://is.gd/create.php?format=simple&url=${url}`)
-  if (!res.ok) throw false
-  return await res.text()
-}
