@@ -1,13 +1,13 @@
 # Sad-Bot
 
-<a href="https://github.com/FahriAdison/Sad-Bot-V2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/findme-19/antibot_md?label=Forks&color=blue&style=flat-square"></a>
-<a href="https://github.com/FahriAdison/Sad-Bot-V2/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/findme-19/antibot_md?label=Watchers&color=green&style=flat-square"></a>
-<a href="https://github.com/FahriAdison/Sad-Bot-V2/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/findme-19/antibot_md?label=Stars&color=yellow&style=flat-square"></a>
-<a href="https://github.com/FahriAdison/Sad-Bot-V2/graphs/contributors"><img title="Contributors" src="https://img.shields.io/github/contributors/findme-19/antibot_md?label=Contributors&color=blue&style=flat-square"></a>
-<a href="https://github.com/FahriAdison/Sad-Bot-V2/issues"><img title="Issues" src="https://img.shields.io/github/issues/findme-19/antibot_md?label=Issues&color=success&style=flat-square"></a>
-<a href="https://github.com/FahriAdison/Sad-Bot-V2/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/findme-19/antibot_md?label=Issues&color=red&style=flat-square"></a>
-<a href="https://github.com/FahriAdison/Sad-Bot-V2/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/findme-19/antibot_md?label=PullRequest&color=success&style=flat-square"></a>
-<a href="https://github.com/FahriAdison/Sad-Bot-V2/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/findme-19/antibot_md?label=PullRequest&color=red&style=flat-square"></a>
+<a href="https://github.com/FahriAdison/Sad-Bot-V2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/FahriAdison/Sad-Bot-V2?label=Forks&color=blue&style=flat-square"></a>
+<a href="https://github.com/FahriAdison/Sad-Bot-V2/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/FahriAdison/Sad-Bot-V2?label=Watchers&color=green&style=flat-square"></a>
+<a href="https://github.com/FahriAdison/Sad-Bot-V2/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/FahriAdison/Sad-Bot-V2?label=Stars&color=yellow&style=flat-square"></a>
+<a href="https://github.com/FahriAdison/Sad-Bot-V2/graphs/contributors"><img title="Contributors" src="https://img.shields.io/github/contributors/FahriAdison/Sad-Bot-V2?label=Contributors&color=blue&style=flat-square"></a>
+<a href="https://github.com/FahriAdison/Sad-Bot-V2/issues"><img title="Issues" src="https://img.shields.io/github/issues/FahriAdison/Sad-Bot-V2?label=Issues&color=success&style=flat-square"></a>
+<a href="https://github.com/FahriAdison/Sad-Bot-V2/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/FahriAdison/Sad-Bot-V2?label=Issues&color=red&style=flat-square"></a>
+<a href="https://github.com/FahriAdison/Sad-Bot-V2/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/FahriAdison/Sad-Bot-V2?label=PullRequest&color=success&style=flat-square"></a>
+<a href="https://github.com/FahriAdison/Sad-Bot-V2/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/FahriAdison/Sad-Bot-V2?label=PullRequest&color=red&style=flat-square"></a>
 <a href="https://www.youtube.com/channel/UC3zScvuQfMxqiTC5x_JUEng"><img src="https://img.shields.io/youtube/channel/subscribers/UC3zScvuQfMxqiTC5x_JUEng?style=social" /> <br>
 
 ------
