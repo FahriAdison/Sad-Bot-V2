@@ -36,7 +36,7 @@ var handler = async (m, {
 }) => {
 	var tags
 	var teks = `${args[0]}`.toLowerCase()
-	var arrayMenu = ['all', 'game', 'rpg', 'xp', 'sticker', 'kerang', 'primbon', 'group', 'premium', 'internet', 'anonymous', 'downloader', 'tools', 'wattpadz', 'anime', 'audio', 'database', 'owner', 'jadian', 'noktg', 'imagemaker', 'textmaker', 'war']
+	var arrayMenu = ['all', 'game', 'rpg', 'xp', 'sticker', 'kerang', 'primbon', 'group', 'premium', 'internet', 'anonymous', 'downloader', 'tools', 'wattpadz', 'anime', 'audio', 'database', 'owner', 'jadian', 'noktg', 'imagemaker', 'textmaker', 'war', 'berita']
 	if (!arrayMenu.includes(teks)) teks = '404'
 	if (teks == 'all') tags = {
 		'main': 'Main',
@@ -69,6 +69,7 @@ var handler = async (m, {
 		'advanced': 'Advanced',
 		'info': 'Info',
 		'war': 'War',
+		'berita': 'Berita',
 		'': 'No Category',
 	}
 	if (teks == 'game') tags = {
@@ -148,6 +149,9 @@ var handler = async (m, {
 	}
 	if (teks == 'war') tags = {
 		'war': 'War'
+	}
+	if (teks == 'berita') tags = {
+		'berita': 'Berita'
 	}
 
 	try {
@@ -311,11 +315,15 @@ var handler = async (m, {
 						{
 							title: "War",
 							rowId: _p + `? war`
+						},
+						{
+							title: "Berita",
+							rowId: _p + `? berita`
 						}
 					]
 				}]
 			})
-			await delay(60000)
+			await delay(20000)
 			return (await conn.sendMessage(m.chat, {
 				delete: sendMsg.key
 			}))
