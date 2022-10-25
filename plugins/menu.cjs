@@ -36,7 +36,7 @@ var handler = async (m, {
 }) => {
 	var tags
 	var teks = `${args[0]}`.toLowerCase()
-	var arrayMenu = ['all', 'game', 'rpg', 'xp', 'sticker', 'kerang', 'primbon', 'group', 'premium', 'internet', 'anonymous', 'downloader', 'tools', 'wattpadz', 'anime', 'audio', 'database', 'owner', 'jadian', 'noktg', 'imagemaker', 'textmaker', 'war', 'berita', 'quran']
+	var arrayMenu = ['all', 'game', 'rpg', 'xp', 'sticker', 'kerang', 'primbon', 'group', 'premium', 'internet', 'anonymous', 'downloader', 'tools', 'wattpadz', 'anime', 'audio', 'database', 'owner', 'jadian', 'noktg', 'imagemaker', 'textmaker', 'random', 'war', 'berita', 'quran']
 	if (!arrayMenu.includes(teks)) teks = '404'
 	if (teks == 'all') tags = {
 		'main': 'Main',
@@ -68,6 +68,7 @@ var handler = async (m, {
 		'user': 'User',
 		'advanced': 'Advanced',
 		'info': 'Info',
+		'random': 'Random Sound',
 		'war': 'War',
 		'berita': 'Berita',
 		'quran': 'Quran',
@@ -147,6 +148,9 @@ var handler = async (m, {
 	if (teks == 'noktg') tags = {
 		'info': 'Info',
 		'': 'No Category'
+	}
+	if (teks == 'random') tags = {
+		'random': 'Random Sound'
 	}
 	if (teks == 'war') tags = {
 		'war': 'War'
@@ -315,6 +319,10 @@ var handler = async (m, {
 						{
 							title: "Tanpa Kategori",
 							rowId: _p + `? noktg`
+						},
+					        {
+							title: "Random Sound",
+							rowId: _p + `? random`
 						},
 						{
 							title: "War",
