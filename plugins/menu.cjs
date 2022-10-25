@@ -36,7 +36,7 @@ var handler = async (m, {
 }) => {
 	var tags
 	var teks = `${args[0]}`.toLowerCase()
-	var arrayMenu = ['all', 'game', 'rpg', 'xp', 'sticker', 'kerang', 'primbon', 'group', 'premium', 'internet', 'anonymous', 'downloader', 'tools', 'wattpadz', 'anime', 'audio', 'database', 'owner', 'jadian', 'noktg', 'imagemaker', 'textmaker', 'war', 'berita']
+	var arrayMenu = ['all', 'game', 'rpg', 'xp', 'sticker', 'kerang', 'primbon', 'group', 'premium', 'internet', 'anonymous', 'downloader', 'tools', 'wattpadz', 'anime', 'audio', 'database', 'owner', 'jadian', 'noktg', 'imagemaker', 'textmaker', 'war', 'berita', 'quran']
 	if (!arrayMenu.includes(teks)) teks = '404'
 	if (teks == 'all') tags = {
 		'main': 'Main',
@@ -70,6 +70,7 @@ var handler = async (m, {
 		'info': 'Info',
 		'war': 'War',
 		'berita': 'Berita',
+		'quran': 'Quran',
 		'': 'No Category',
 	}
 	if (teks == 'game') tags = {
@@ -149,6 +150,9 @@ var handler = async (m, {
 	}
 	if (teks == 'war') tags = {
 		'war': 'War'
+	}
+	if (teks == 'quran') tags = {
+		'quran': 'Quran'
 	}
 	if (teks == 'berita') tags = {
 		'berita': 'Berita'
@@ -315,6 +319,10 @@ var handler = async (m, {
 						{
 							title: "War",
 							rowId: _p + `? war`
+						},
+						{
+							title: "Quran",
+							rowId: _p + `? quran`
 						},
 						{
 							title: "Berita",
