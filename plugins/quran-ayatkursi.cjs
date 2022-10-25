@@ -16,4 +16,4 @@ handler.tags = ['quran']
 handler.command = /^(ayatkursi)$/i
 
 
-module.exports = hanlder
+module.exports = handler
