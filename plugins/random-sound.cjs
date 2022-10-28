@@ -1,10 +1,11 @@
 var handler = async (m, { conn, command }) => {
 m.reply('Wait 🐦')
-let audio = `https://raw.githubusercontent.com/saipulanuar/Api-Github/main/audio/${command}.mp3`
+let audio = `https://raw.githubusercontent.com/FahriAdison/Base-Sound/main/audio/${command}.mp3`
 await conn.sendFile(m.chat, audio, 'error.mp3', null, m, true)
 }
 
 handler.command = handler.help = [
+'acumalaka',
 'anjay',
 'ara-ara',
 'ara-ara-cowok',
@@ -30,6 +31,7 @@ handler.command = handler.help = [
 'daisuki-dayo',
 'daisuki',
 'dengan-mu',
+'farhan-kebab',
 'gaboleh-gitu',
 'gak-lucu',
 'gamau',
@@ -64,7 +66,10 @@ handler.command = handler.help = [
 'pasi-pasi',
 'punten',
 'sayang',
+'reza-kecap',
 'siapa-sih',
+'siren',
+'siuu',
 'sudah-biasa',
 'summertime',
 'tanya-bapak-lu',
